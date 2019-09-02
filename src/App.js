@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 
 import LayoutWrapper from "@layout"
 import { Switch, Redirect } from "react-router-dom"
-// import { baseConfig } from "@router"
+
 import { layoutRouter } from "@router"
 import routerEach from "@utils/routerEach"
+import authRouter from "@common/authRouter"
 
-// let routerEachComponent = routerEach(baseConfig)
 let routerEachComponent = routerEach(layoutRouter)
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <Switch>
@@ -22,4 +22,6 @@ export default class App extends Component {
     )
   }
 }
+
+export default authRouter(App)
 

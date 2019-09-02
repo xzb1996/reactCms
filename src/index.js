@@ -5,18 +5,20 @@ import App from './App';
 import store from "./store"
 import { Provider } from "react-redux"
 import { HashRouter as Router, Route } from "react-router-dom"
-// import { nolayoutRouter } from "@router"
-// import routerEach from "@utils/routerEach"
+import { nolayoutRouter } from "@router"
+import routerEach from "@utils/routerEach"
 
-// let RouteComponent = routerEach(nolayoutRouter)
-
+let RouteComponent = routerEach(nolayoutRouter)
+// component={App}
 ReactDOM.render(
     <Router>
         <Provider store={store}>
-            <Route path="/" component={App} />
-            {/* {
+            <Route path="/"  render={()=>(
+                <App />
+            )}/>
+            {
                 RouteComponent
-            } */}
+            }
         </Provider>
     </Router>,
     document.getElementById('root')

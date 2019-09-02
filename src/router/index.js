@@ -68,7 +68,7 @@ export const layoutRouter = [
                 path: '/user/userauth',
                 component: UserAuth,
                 icon: "user",
-                key: "/books/userauth",
+                key: "/user/userauth",
                 name: "权限管理",
                 meta: {
                     auth: true
@@ -78,7 +78,7 @@ export const layoutRouter = [
                 path: '/user/userinfo',
                 component: UserInfo,
                 icon: "user",
-                key: "/books/userinfo",
+                key: "/user/userinfo",
                 name: "个人信息",
                 meta: {
                     auth: true

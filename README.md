@@ -28,9 +28,6 @@ yarn add antd
 yarn add react-app-rewired customize-cra babel-plugin-import http-proxy-middleware --dev
 ```
 
-# 项目目录结构
-
-- 待完成
 
 # 思路（每日完成事项）
 ### 1、 环境配置
@@ -56,12 +53,16 @@ yarn add react-app-rewired customize-cra babel-plugin-import http-proxy-middlewa
 - 将layout中的侧边栏左侧单独拎出来，并进行封装（@utils->sliderEach）
 
 ### 3、登录注册
-
-
+- common-->authRouter-->设置登录权限
+- pages-->login-->静态页面搭建完毕（使用antd中的form和input组件）
+- 登录完成
 
 ### 4、页面模块
-
-
+- 个人信息模块
+- 导出表格 npm install xlsx
+- 添加用户信息
+- 添加富文本 npm install wangeditor/yarn add wangeditor
+- 用户信息
 
 # GitHub使用
 ### 创建自己的仓库

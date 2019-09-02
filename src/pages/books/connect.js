@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import { hotBooksAsyncAction } from "@actions/books"
 
-export default class Connect extends Component {
-    render() {
-        return (
-            <div>
-            Connect
-            </div>
-        )
+export const mapStateToProps = (state) => ({
+    hotBooks:state.books.hotbooks,
+    count:state.books.count
+})
+
+
+export const mapDispatchToProps = (dispatch) => ({
+    getHotBooks() {
+        dispatch(hotBooksAsyncAction())
     }
-}
+})
