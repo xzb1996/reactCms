@@ -63,7 +63,6 @@ yarn add react-app-rewired customize-cra babel-plugin-import http-proxy-middlewa
 - 添加用户信息
 - 添加富文本 npm install wangeditor/yarn add wangeditor
 - 用户信息
-test
 
 # GitHub使用
 ### 创建自己的仓库
